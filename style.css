@@ -11,6 +11,9 @@ header{
     margin-top: 60px;
     padding: 10px, 50px;
 }
+#openSidebarMenu{
+    display: none;
+}
 .toggle{
     height: 22px;
     width: 22px;
@@ -32,16 +35,16 @@ header{
 #sidebarMenu{
     height: 100%;
     position: fixed;
-    left: 100;
+    left: 0;
     top:0;
     width: 250px;
     margin-top: 60px; 
     background:#2e86de;
-    transform: translateY(-250px);
+    transform: translateX(-250px);
     transition:ttransform 250ms ease-in-out;
 }
 #openSidebarMenu:checked ~ #sidebarMenu{
-    transform: translatey(0);
+    transform: translatex(0);
 }
 #openSidebarMenu:checked ~ .toggle > .spiner.middle{
     opacity: 0;
