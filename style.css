@@ -6,22 +6,20 @@ header{
     position: fixed;
     z-index: 10;
 }
-.main{
-    height: 100%;
-    margin-top: 60px;
-    padding: 10px, 50px;
-}
+
 #openSidebarMenu{
     display: none;
 }
 .toggle{
     height: 22px;
-    width: 22px;
+    width: 25px;
     position: absolute;
     z-index: 20;
     top: 22px;
     left: 15px;
     cursor: pointer;
+   
+    
 }
 .spiner{
     height: 3px;
@@ -38,11 +36,29 @@ header{
     left: 0;
     top:0;
     width: 250px;
-    margin-top: 60px; 
-    background:#2e86de;
+    margin-top: 68px; 
+    background:hwb(210 1% 97% / 0.467);
     transform: translateX(-250px);
     transition:ttransform 250ms ease-in-out;
 }
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+  .menu li {
+    padding: 20px 20px;
+    border-bottom:1px solid rgba(220, 199, 199, 0.1) ;
+    color: white;
+  }
+  .menu li a {
+    text-decoration: none;
+   font-size: 20px;
+   /* padding: 40px; */
+   color: #ffff;
+  }
+ 
 #openSidebarMenu:checked ~ #sidebarMenu{
     transform: translatex(0);
 }
@@ -58,20 +74,5 @@ header{
     margin-top: -9px;
 }
  
-.menu{
-    list-style: none;
-    padding: 0;
-
-}
-  .menu li {
-    padding: 8px 8px;
-    border-bottom: rgba(220, 199, 199, 0.1) !important;
-    color: white;
-  }
-  .menu li a {
-    text-decoration: none;
-   font-size: 20px;
-   padding: 20px;
-  }
 
  
